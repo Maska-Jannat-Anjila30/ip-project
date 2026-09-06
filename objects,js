@@ -1,0 +1,31 @@
+let student = {
+  name: "Anjila",
+  id: 1216,
+  department: "CSE",
+};
+
+console.log(student.name);
+console.log(student.id);
+
+// Bracket notation
+
+console.log(student["name"]);
+
+// Modifying an object
+
+student.id = 1215;
+student.university = "Premier University";
+
+console.log(student);
+
+// Object method
+
+const student2 = {
+  name: "salma",
+
+  greet() {
+    console.log(`Hello, I am ${this.name}`);
+  },
+};
+
+student2.greet();
