@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Brazil Football Club</title>
+
+    <style>
+
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+        }
+
+        body {
+            font-family: Arial;
+        }
+
+
+    
+
+        nav {
+            background-color: green;
+            color: white;
+            padding: 20px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo img {
+            width: 50px;
+            height: 50px;
+            object-fit: contain;
+        }
+
+
+        nav ul {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+        }
+
+
+        
+
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background-color: lightgreen;
+        }
+
+        .hero h1 {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .hero button {
+            padding: 10px 20px;
+            margin-top: 20px;
+        }
+
+
+        
+
+        .players {
+            padding: 40px;
+        }
+
+        .players h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .player-container {
+            display: grid;
+
+            /* Desktop = 4 cards */
+            grid-template-columns: repeat(4, 1fr);
+
+            gap: 20px;
+        }
+
+
+    
+
+        .card {
+            border: 1px solid gray;
+            padding: 15px;
+            text-align: center;
+            background-color: white;
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            margin-top: 10px;
+        }
+
+
+        
+
+        @media (max-width: 992px) {
+
+            .player-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+        }
+
+
+        
+
+        @media (max-width: 576px) {
+
+            .player-container {
+                grid-template-columns: 1fr;
+            }
+
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    
+
+    <nav>
+
+        <h2>Brazil FC</h2>
+         <img src="https://tse4.mm.bing.net/th/id/OIP.6gDYhBKiuoEC1H5lX60fPgAAAA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3">
+
+        <ul>
+
+            <li>Home</li>
+            <li>Players</li>
+            <li>About</li>
+
+        </ul>
+
+    </nav>
+
+
+
+    
+
+    <section class="hero">
+
+        <h1>Brazil Football Team</h1>
+
+        <p>Welcome to our football club</p>
+
+        <button>Explore the Squad</button>
+
+    </section>
+
+
+
+    <section class="players">
+
+        <h2>Our Players</h2>
+
+
+        <div class="player-container">
+
+
+            
+
+            <div class="card">
+
+                 <img src=https://images.hdqwalls.com/wallpapers/neymar-jr-fifa-world-cup-qatar-03.jpg>
+
+                <h3>Neymar Jr.</h3>
+
+                <p>Forward</p>
+
+            </div>
+
+
+        
+
+            <div class="card">
+
+                <img src=https://wallpaperbat.com/img/894053-sports-vinicius-junior-4k-ultra-hd-wallpaper.jpg>
+
+                <h3>Vinicius Jr.</h3>
+
+                <p>Forward</p>
+
+            </div>
+
+
+            
+
+            <div class="card">
+
+                <img src=https://sempreinter.com/wp-content/uploads/2026/03/Alisson-Becker-Liverpool-9.jpg>
+
+                <h3>Alisson</h3>
+
+                <p>Goalkeeper</p>
+
+            </div>
+
+
+            
+
+            
+    
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+</body>
+
+</html>
